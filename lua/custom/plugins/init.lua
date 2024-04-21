@@ -4,5 +4,4 @@
 -- See the kickstart.nvim README for more information
 return {
     'github/copilot.vim',
-    'pocco81/auto-save.nvim'
 }
