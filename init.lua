@@ -93,7 +93,7 @@ vim.g.maplocalleader = ' '
 -- Marius custom
 -- Set "jj" to escape from insert mode
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>e', ':Neotree reveal<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeOpen<CR>', { noremap = true, silent = true })
 -- Indent right and keep text selected
 vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true })
 -- Indent left and keep text selected
@@ -576,7 +576,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {},
+        -- tsserver = {},
         tailwindcss = {},
 
         lua_ls = {
